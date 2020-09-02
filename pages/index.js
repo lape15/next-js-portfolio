@@ -1,8 +1,22 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
+import { useEffect, useState } from "react";
 
-export default function Home() {
+const Home = () => {
+  const [loading, setLoading] = useState(false);
+  const handleLoading = () => {
+    setLoading(true);
+  };
+  useEffect(() => {
+    handleLoading();
+    const interval = setTimeout(() => {
+      console.log("We are loading" + loading);
+    }, 3000);
+    return () => {
+      clearInterval(interval);
+    };
+  });
   return (
     <Layout home>
       <Head>
@@ -12,11 +26,8 @@ export default function Home() {
         <p>
           Akintan Lape, I am a fron-end devloper.You can contact me on twitter
         </p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
       </section>
     </Layout>
   );
-}
+};
+export default Home;
