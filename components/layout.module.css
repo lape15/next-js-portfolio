@@ -1,25 +1,11 @@
 .container {
-  padding: 0 1rem;
   min-height: 100vh;
-  border: 2px solid red;
+  padding: 5px 10px;
+  position: relative;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.headerImage {
-  width: 6rem;
-  height: 6rem;
-}
-
-.headerHomeImage {
-  width: 8rem;
-  height: 8rem;
-}
-
-.backToHome {
-  margin: 3rem 0 0;
 }

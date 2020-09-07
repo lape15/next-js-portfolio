@@ -1,16 +1,21 @@
 import Head from "next/head";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
+import Navbar from "./Navbar";
+import Menu from "./menu/Menu";
 
 const name = "Lape";
-export const siteTitle = "Portfolio";
+export const siteTitle = "Lape";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap"
+          rel="stylesheet"
+        />
+
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -24,7 +29,8 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-
+      <Navbar />
+      <Menu />
       <main>{children}</main>
     </div>
   );

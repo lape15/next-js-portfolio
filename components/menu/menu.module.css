@@ -1,0 +1,77 @@
+.menu_box {
+  border: 2px solid blue;
+  position: absolute;
+  width: 60%;
+  z-index: 5;
+  top: 0px;
+  right: 0;
+  padding: 10px 15px;
+  height: 400px;
+  /* display: block;
+  text-align: center; */
+}
+
+.menu_btn {
+  width: 50px;
+  height: 50px;
+  padding: 15px 10px;
+  transform: translateX(610px);
+}
+
+.menu_btn .hamburger {
+  width: 27px;
+  height: 4px;
+  background-color: #000;
+  cursor: pointer;
+}
+.menu_btn .hamburger::before {
+  content: "";
+  width: 27px;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transform: translateY(-8px);
+}
+
+.menu_btn .hamburger::after {
+  content: "";
+  width: 27px;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transform: translateY(8px);
+}
+
+.item_box {
+  display: block;
+  width: 70%;
+  border: 2px solid red;
+  padding: 15px 10px;
+  margin: 0 auto;
+  text-align: center;
+  height: 300px;
+}
+.menu_item {
+  color: #fd8c01;
+  transition: all 0.9s cubic-bezier(0.85, 0.9, 0, 0.37);
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Kufam", cursive;
+}
+
+.menu_item::before {
+  content: "Hey";
+}
+
+.menu_item:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  transition: all 0.9s cubic-bezier(0.85, 0.9, 0, 0.37);
+}
+
+.menu_item:hover::before {
+}
+.pink {
+  color: blue;
+}
