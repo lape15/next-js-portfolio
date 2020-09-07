@@ -1,12 +1,23 @@
-import React from "react";
+import { useContext } from "react";
 import Link from "next/link";
 import styles from "./menu.module.css";
+import { MenuContext } from "../../context/MenuContext";
 
 const Menu = () => {
+  const { state, dispatch } = useContext(MenuContext);
+
+  console.log(state);
   return (
     <div className={styles.menu_box}>
       <div className={styles.menu_btn}>
-        <div className={styles.hamburger}></div>
+        <div
+          className={styles.hamburger}
+          onClick={() =>
+            dispatch({
+              type: "CHANGE_MENU",
+            })
+          }
+        ></div>
       </div>
       <div className={`${styles.item_box} `}>
         <Link href="/">

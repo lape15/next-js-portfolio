@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import Navbar from "./Navbar";
 import Menu from "./menu/Menu";
+import MenuContextProvider from "../context/MenuContext";
 
 const name = "Lape";
 export const siteTitle = "Lape";
@@ -29,6 +30,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+
       <Navbar />
       <Menu />
       <main>{children}</main>
