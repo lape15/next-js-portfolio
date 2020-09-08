@@ -13,6 +13,7 @@ const Home = () => {
     const interval = setTimeout(() => {
       console.log("We are loading" + loading);
     }, 3000);
+    5;
     return () => {
       clearInterval(interval);
     };

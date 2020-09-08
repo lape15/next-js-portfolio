@@ -1,39 +1,44 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Link from "next/link";
 import styles from "./menu.module.css";
 import { MenuContext } from "../../context/MenuContext";
 
 const Menu = () => {
-  const { state, dispatch } = useContext(MenuContext);
+  //   const { showMenu, handleMenu } = useContext(MenuContext);
 
-  console.log(state);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+  console.log(showMenu);
   return (
-    <div className={styles.menu_box}>
+    <>
       <div className={styles.menu_btn}>
         <div
-          className={styles.hamburger}
-          onClick={() =>
-            dispatch({
-              type: "CHANGE_MENU",
-            })
-          }
+          className={` ${styles.hamburger} ${showMenu ? styles.open : ""}`}
+          onClick={handleMenu}
         ></div>
       </div>
-      <div className={`${styles.item_box} `}>
-        <Link href="/">
-          <a className={styles.menu_item}>Home </a>
-        </Link>
-        <Link href="/">
-          <a className={styles.menu_item}>About </a>
-        </Link>
-        <Link href="/">
-          <a className={styles.menu_item}>Projects</a>
-        </Link>
-        <Link href="/">
-          <a className={`${styles.menu_item} ${styles.pink}`}>Contact </a>
-        </Link>
+      <div
+        className={`${styles.menu_box} ${showMenu ? styles.show : styles.hide}`}
+      >
+        <div className={`${styles.item_box} `}>
+          <Link href="/">
+            <a className={styles.menu_item}>About </a>
+          </Link>
+          <Link href="/">
+            <a className={styles.menu_item}>Projects</a>
+          </Link>
+          <Link href="/">
+            <a className={styles.menu_item}>Skills</a>
+          </Link>
+          <Link href="/">
+            <a className={`${styles.menu_item} `}>Contact </a>
+          </Link>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
