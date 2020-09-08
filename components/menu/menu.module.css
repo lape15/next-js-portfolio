@@ -12,11 +12,11 @@
 
 .menu_box.show {
   transform: translateX(0);
-  transition: all 0.3s cubic-bezier(0.85, 0.9, 0, 0.37);
+  transition: all 0.5s cubic-bezier(0.85, 0.9, 0, 0.37);
 }
 .menu_box.hide {
   transform: translateX(500px);
-  transition: all 0.3s cubic-bezier(0.85, 0.9, 0, 0.37);
+  transition: all 0.5s cubic-bezier(0.85, 0.9, 0, 0.37) 1.5s;
 }
 .menu_btn {
   width: 50px;
@@ -34,7 +34,7 @@
   height: 4px;
   background-color: #000;
   cursor: pointer;
-  transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out 1.3s;
 }
 .menu_btn .hamburger::before {
   content: "";
@@ -43,6 +43,7 @@
   background-color: #000;
   position: absolute;
   transform: translateY(-8px);
+  transition: all 1s ease-in-out 1.3s;
 }
 
 .menu_btn .hamburger::after {
@@ -52,6 +53,7 @@
   background-color: #000;
   position: absolute;
   transform: translateY(8px);
+  transition: all 1s ease-in-out 1.3s;
 }
 
 .menu_btn .open::before {
@@ -60,6 +62,7 @@
     rgba(255, 255, 255, 0.7)
   );
   transform: rotate(45deg);
+  transition: all 0.5s ease-in-out;
 }
 .menu_btn .open {
   background-color: transparent;
@@ -74,15 +77,15 @@
     rgba(255, 255, 255, 0.7)
   );
   transform: rotate(135deg);
+  transition: all 0.5s ease-in-out;
 }
 .item_box {
   display: block;
   width: 70%;
-  border: 2px solid red;
   padding: 25px 10px;
   margin: 30px auto;
   text-align: center;
-  height: 350px;
+  height: 370px;
 }
 .menu_item {
   background: linear-gradient(
@@ -131,13 +134,57 @@
   width: 40%;
 }
 
-.about {
+.menu_item.about {
+  transform: translate(0, 0);
+  transition: all 1s cubic-bezier(0.85, 0.9, 0, 0.37) 0.2s;
+  opacity: 100;
 }
 
-.projects {
+.menu_item.projects {
+  transform: translate(0, 0);
+  transition: all 1s cubic-bezier(0.85, 0.9, 0, 0.37) 0.4s;
+  opacity: 100;
 }
 
-.skills {
+.menu_item.skills {
+  transform: translate(0, 0);
+  transition: all 1s cubic-bezier(0.85, 0.9, 0, 0.37) 0.6s;
+  opacity: 100;
 }
-.contact {
+.menu_item.contact {
+  transform: translate(0, 0);
+  transition: all 1s cubic-bezier(0.85, 0.9, 0, 0.37) 0.8s;
+  opacity: 100;
+}
+
+.menu_item.item_one {
+  transform: translate(0, 60px);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.85, 0.9, 0, 0.37) 0.8s;
+}
+
+.menu_item.item_two {
+  transform: translate(0, 90px);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.85, 0.9, 0, 0.37) 0.6s;
+}
+
+.menu_item.item_three {
+  transform: translate(0, 120px);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.85, 0.9, 0, 0.37) 0.4s;
+}
+.menu_item.item_four {
+  transform: translate(0, 150px);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.85, 0.9, 0, 0.37) 0.2s;
+}
+
+@media only screen and (max-width: 769px) {
+  .menu_btn {
+    transform: translate(320px, -65px);
+  }
+  .menu_box {
+    width: 63.3%;
+  }
 }

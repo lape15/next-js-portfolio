@@ -25,16 +25,40 @@ const Menu = () => {
       >
         <div className={`${styles.item_box} `}>
           <Link href="/">
-            <a className={styles.menu_item}>About </a>
+            <a
+              className={`${styles.menu_item} ${
+                showMenu ? styles.about : styles.item_one
+              }`}
+            >
+              About{" "}
+            </a>
           </Link>
           <Link href="/">
-            <a className={styles.menu_item}>Projects</a>
+            <a
+              className={`${styles.menu_item} ${
+                showMenu ? styles.projects : styles.item_two
+              }`}
+            >
+              Projects
+            </a>
           </Link>
           <Link href="/">
-            <a className={styles.menu_item}>Skills</a>
+            <a
+              className={`${styles.menu_item} ${
+                showMenu ? styles.skills : styles.item_three
+              }`}
+            >
+              Skills
+            </a>
           </Link>
           <Link href="/">
-            <a className={`${styles.menu_item} `}>Contact </a>
+            <a
+              className={`${styles.menu_item} ${
+                showMenu ? styles.contact : styles.item_four
+              }`}
+            >
+              Contact{" "}
+            </a>
           </Link>
         </div>
       </div>

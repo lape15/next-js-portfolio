@@ -17,6 +17,11 @@ export default function Layout({ children, home }) {
           rel="stylesheet"
         />
 
+        <link
+          href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap"
+          rel="stylesheet"
+        />
+
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
