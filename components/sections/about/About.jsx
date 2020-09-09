@@ -26,7 +26,7 @@ const About = (props) => {
         >
           About Me 👋
         </h2>
-        <div data-aos="slide-up">
+        <div data-aos="fade-up-right">
           <span className={styles.text}>
             I am a front-end developer and for more a year now, software has
             been the central piece of my world. On this fast and mind-blowing

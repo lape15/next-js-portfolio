@@ -3,6 +3,8 @@
   padding: 15px 10px;
   position: relative;
   overflow-x: hidden;
+
+  overflow-y: hidden;
 }
 
 /* .header {
