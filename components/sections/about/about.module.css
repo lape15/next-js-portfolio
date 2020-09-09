@@ -1,0 +1,54 @@
+.about_section {
+  height: 580px;
+  border: 2px solid green;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #f9f9f9;
+}
+
+.sec_one {
+  /* border: 2px solid red; */
+  width: 50%;
+  height: 400px;
+  padding: 15px 10px;
+}
+.sec_two {
+  border: 2px solid blue;
+  width: 45%;
+  height: 400px;
+}
+.head {
+  font-family: "Luckiest Guy", cursive;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.text {
+  padding: 12px 10px;
+  font-size: 1.3rem;
+  margin: 10px;
+  font-family: "Kufam", cursive;
+}
+.clear {
+  opacity: 100;
+}
+.un_clear {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 769px) {
+  .about_section {
+    height: 900px;
+    display: block;
+    margin-top: 20px;
+  }
+  .sec_one {
+    width: 100%;
+  }
+  .sec_two {
+    width: 100%;
+  }
+}

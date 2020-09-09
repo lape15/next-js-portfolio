@@ -1,19 +1,16 @@
 import { useTrail, animated } from "react-spring";
 import { useEffect, useState } from "react";
-import AOS from "aos";
-
 import styles from "./welcome.module.css";
 
-const HomeIndex = () => {
+const HomeIndex = (props) => {
+  console.log(props.AOS);
   const [loading, setLoading] = useState(false);
   const handleLoading = () => {
     setLoading(true);
   };
   useEffect(() => {
     handleLoading();
-    AOS.init({
-      duration: 2000,
-    });
+    props.AOS.init();
   });
   return (
     <section className={styles.part_one}>
@@ -41,7 +38,7 @@ const HomeIndex = () => {
           src="/images/laps.JPG"
           alt="lady"
           className={styles.img}
-          data-aos="fade-right"
+          data-aos="zoom-out-up"
         />
       </div>
     </section>
