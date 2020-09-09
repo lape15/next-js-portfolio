@@ -18,7 +18,7 @@ export default function Layout({ children, home }) {
         />
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway&display=swap"
           rel="stylesheet"
         />
 

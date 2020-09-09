@@ -23,7 +23,7 @@
   height: 50px;
   padding: 18px 10px;
   position: fixed;
-  transform: translate(1150px, -65px);
+  transform: translate(1150px, -55px);
   cursor: pointer;
   position: fixed;
   z-index: 6;
@@ -182,7 +182,7 @@
 
 @media only screen and (max-width: 769px) {
   .menu_btn {
-    transform: translate(320px, -65px);
+    transform: translate(300px, -55px);
   }
   .menu_box {
     width: 63.3%;
