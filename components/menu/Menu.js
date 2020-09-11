@@ -24,11 +24,12 @@ const Menu = () => {
         className={`${styles.menu_box} ${showMenu ? styles.show : styles.hide}`}
       >
         <div className={`${styles.item_box} `}>
-          <Link href="/">
+          <Link href="#about">
             <a
               className={`${styles.menu_item} ${
                 showMenu ? styles.about : styles.item_one
               }`}
+              onClick={handleMenu}
             >
               About{" "}
             </a>
@@ -38,6 +39,7 @@ const Menu = () => {
               className={`${styles.menu_item} ${
                 showMenu ? styles.projects : styles.item_two
               }`}
+              onClick={handleMenu}
             >
               Projects
             </a>
@@ -47,6 +49,7 @@ const Menu = () => {
               className={`${styles.menu_item} ${
                 showMenu ? styles.skills : styles.item_three
               }`}
+              onClick={handleMenu}
             >
               Skills
             </a>
@@ -56,6 +59,7 @@ const Menu = () => {
               className={`${styles.menu_item} ${
                 showMenu ? styles.contact : styles.item_four
               }`}
+              onClick={handleMenu}
             >
               Contact{" "}
             </a>

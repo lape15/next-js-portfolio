@@ -1,11 +1,12 @@
 .part_one {
   width: 100%;
   height: 480px;
-  padding: 25px 40px;
+  padding: 25px 30px;
   font-family: "Luckiest Guy", cursive;
   display: flex;
   flex-flow: row wrap;
   background: #fff;
+  transition: all 2s cubic-bezier(0.85, 0.9, 0, 0.37);
 }
 
 .side_one {
@@ -13,21 +14,24 @@
 }
 .side_two {
   width: 27%;
-
-  padding: 5px;
-  /* background: linear-gradient(
+  border: 2px solid rgb(244, 168, 168);
+  position: relative;
+  background: linear-gradient(
     to right,
     rgb(244, 168, 168),
     rgba(238, 125, 125, 0.7)
-  ); */
+  );
+  border-radius: 17px;
 }
 
 .img {
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   border-radius: 17px;
-  box-shadow: 2px 2px 25px rgba(242, 165, 89, 0.4);
-  animation: moving-image 1.2s ease-in infinite;
+  position: absolute;
+  right: 25px;
+  top: -25px;
+  /* animation: moving-image 1.2s ease-in infinite; */
 }
 
 .img:hover {
@@ -65,7 +69,7 @@
   position: relative;
   padding: 12px 10px;
   width: 850px;
-  margin: 10px;
+  margin: 5px;
   border: 8px solid #fff;
   font-weight: 700;
   font-family: "Luckiest Guy", cursive;
@@ -232,7 +236,7 @@
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 6s infinite linear alternate-reverse;
   padding: 15px 10px 10px;
-  transition: transform 1s cubic-bezier(0.85, 0.9, 0, 0.37);
+
   width: 100%;
 }
 .glitch:hover {
@@ -321,5 +325,11 @@
   }
   .side_two {
     width: 100%;
+    height: 400px;
+  }
+  .img {
+    right: 10px;
+    top: -10px;
+    animation: none;
   }
 }
