@@ -1,22 +1,85 @@
 .about_section {
-  height: 580px;
-  /* border: 2px solid green; */
+  height: 100vh;
+
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
+  padding: 10px 35px;
+  background: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+}
+/* .about_section:before {
+  content: "";
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ddbbbb;
+} */
+.sec_one {
+  width: 70%;
+  /* height: 450px; */
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px 85px;
+}
+
+.skill_list {
+  width: 70%;
+  padding: 15px;
+  margin: 10px auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
-  background: #f9f9f9;
+  /* box-shadow: -3px 3px 4px #d1bfbf; */
 }
 
-.sec_one {
-  width: 50%;
-  height: 450px;
-  padding: 5px 10px;
+.left_skill {
+  border: 1px solid #d1bfbf;
+  padding: 10px;
+  width: 45%;
+  box-shadow: -3px 3px -1px #d1bfbf;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 168, 168, 0.3),
+    rgba(238, 125, 125, 0.7)
+  );
+}
+
+.right_skill {
+  border: 1px solid #d1bfbf;
+  width: 45%;
+  display: block;
+  box-shadow: -3px 3px -1px #d1bfbf;
+  padding: 10px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  border-radius: 4px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 168, 168, 0.3),
+    rgba(238, 125, 125, 0.7)
+  );
+}
+
+.skill {
+  line-height: 22px;
+  padding: 5px;
+  font-weight: 600;
 }
 .sec_two {
-  width: 45%;
-  height: 450px;
+  width: 40%;
+  height: 400px;
   background: url(../../../public/images/lady.svg),
     linear-gradient(to top, rgba(0, 168, 168, 0.3), rgba(238, 125, 125, 0.7));
   background-size: 37% 100%;
@@ -25,9 +88,12 @@
   border-radius: 17px;
   transition: all 3s ease-in-out;
   transform: scale(0.8);
+  box-shadow: -3px -3px 10px #d1bfbf;
+  border-radius: 50% 50% 50% 50%;
 }
 .sec_two:hover {
-  /* transition: all 1s ease-in-out; */
+  box-shadow: -3px -3px 30px #d1bfbf;
+  transition: all 3s ease-in-out;
 }
 .head {
   font-family: "Luckiest Guy", cursive;
@@ -39,8 +105,9 @@
   padding: 12px 10px;
   font-size: 0.9rem;
   margin: 10px;
-  font-family: "Kufam", cursive;
-  color: grey;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 25px;
 }
 .clear {
   opacity: 100;
@@ -63,10 +130,17 @@
     width: 100%;
     height: 450px;
     text-align: center;
+
+    padding: 10px;
   }
-  .sec_two {
+  .skill_list {
     width: 100%;
     margin-top: 20px;
     height: 400px;
+    display: block;
+  }
+  .left_skill,
+  .right_skill {
+    width: 100%;
   }
 }

@@ -7,10 +7,11 @@ const HomeIndex = dynamic(() => import("../components/sections/Welcome"), {
 });
 import About from "../components/sections/about/About";
 import AOS from "aos";
+import Projects from "../components/sections/projects/Projects";
 const Home = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1500,
     });
   });
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       </Head>
       <HomeIndex AOS={AOS} />
       <About AOS={AOS} />
+      <Projects />
     </Layout>
   );
 };

@@ -22,6 +22,11 @@ export default function Layout({ children, home }) {
           rel="stylesheet"
         />
 
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway&family=Vidaloka&display=swap"
+          rel="stylesheet"
+        ></link>
+
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"

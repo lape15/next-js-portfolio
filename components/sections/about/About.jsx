@@ -5,7 +5,6 @@ const About = (props) => {
   const [loading, setLoading] = useState(false);
 
   const listenScrollEvent = (e) => {
-    console.log(window.scrollY);
     if (window.scrollY >= 180) {
       setLoading(true);
     } else if (window.scrollY < 400) {
@@ -24,9 +23,9 @@ const About = (props) => {
           }`}
           data-aos="slide-up"
         >
-          About Me 👋
+          About Me
         </h2>
-        <div data-aos="fade-up-right">
+        <div data-aos="slide-up">
           <span
             className={`${styles.text} ${
               loading ? styles.clear : styles.un_clear
@@ -37,11 +36,29 @@ const About = (props) => {
             journey, I have moved over the years from being a novice to a pretty
             decent front-end developer. I am profficient in front-end languages
             and their various frameworks I build like to build beatufiful user
-            interfaces.
+            interfaces.With profficiency in :
           </span>
         </div>
       </div>
-      <div className={styles.sec_two} data-aos="fade-up"></div>
+      <div className={styles.skill_list}>
+        <ul className={styles.left_skill} data-aos="slide-right">
+          <ol className={styles.skill}>CSS3</ol>
+          <ol className={styles.skill}>SASS</ol>
+          <ol className={styles.skill}>REACT</ol>
+          <ol className={styles.skill}>HTML5</ol>
+          <ol className={styles.skill}>Next js</ol>
+        </ul>
+        <ul className={styles.right_skill} data-aos="slide-left">
+          <ol className={styles.skill}>GraphQL</ol>
+          <ol className={styles.skill}>Testing</ol>
+          <ol className={styles.skill}>Github</ol>
+          <ol className={styles.skill}>Redux</ol>
+          <ol className={styles.skill}>TailwindCss</ol>
+        </ul>
+        <div>
+          <span>Including responsive designs....</span>
+        </div>
+      </div>
     </section>
   );
 };
