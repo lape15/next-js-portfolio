@@ -12,6 +12,9 @@ const Loader = () => {
       ease: "elastic(1, 0.3)",
       yoyo: true,
       autoAlpha: 1,
+      attr: {
+        "stroke-dashoffset": 350,
+      },
     })
       .to(".move_first", {
         duration: 0.7,
@@ -21,21 +24,23 @@ const Loader = () => {
         fill: "#fff",
         stroke: "#B89D87",
         ease: "elastic(1, 0.3)",
-
+        attr: {
+          "stroke-dashoffset": 0,
+        },
         yoyo: true,
         autoAlpha: 1,
       })
       .from(".name", {
         opacity: 0,
         y: -30,
-        duration: 0.3,
+        duration: 0.2,
         opacity: 0,
         ease: "elastic(1, 0.3)",
       })
       .to(".name", {
         opacity: 1,
         y: 40,
-        duration: 0.3,
+        duration: 0.2,
         opacity: 2,
         ease: "elastic(1, 0.3)",
         fill: "#fff",
@@ -44,14 +49,14 @@ const Loader = () => {
       .from(".pee", {
         opacity: 0,
         y: -30,
-        duration: 0.3,
+        duration: 0.2,
         opacity: 0,
         ease: "elastic(1, 0.3)",
       })
       .to(".pee", {
         y: 40,
         opacity: 1,
-        duration: 0.3,
+        duration: 0.2,
         transformOrigin: "center",
         ease: "back(1.4)",
         fill: "#fff",
@@ -60,14 +65,14 @@ const Loader = () => {
         opacity: 0,
 
         y: -30,
-        duration: 0.3,
+        duration: 0.2,
         opacity: 0,
         ease: "elastic(1, 0.3)",
       })
       .to(".ee", {
         y: 40,
         opacity: 1,
-        duration: 0.3,
+        duration: 0.2,
         transformOrigin: "center",
         ease: "back(1.4)",
         fill: "#fff",
@@ -75,14 +80,14 @@ const Loader = () => {
       .from(".hee", {
         opacity: 0,
         y: -30,
-        duration: 0.3,
+        duration: 0.2,
         opacity: 0,
         ease: "elastic(1, 0.3)",
       })
       .to(".hee", {
         y: 40,
         opacity: 1,
-        duration: 0.3,
+        duration: 0.2,
         transformOrigin: "center",
         ease: "back(1.4)",
         fill: "#fff",
@@ -90,14 +95,14 @@ const Loader = () => {
       .from(".kee", {
         opacity: 0,
         y: -30,
-        duration: 0.33,
+        duration: 0.2,
         opacity: 0,
         ease: "elastic(1, 0.3)",
       })
       .to(".kee", {
         y: 40,
         opacity: 1,
-        duration: 0.3,
+        duration: 0.2,
         transformOrigin: "center",
         ease: "back(1.4)",
         fill: "#fff",
@@ -105,14 +110,14 @@ const Loader = () => {
       .from(".iee", {
         opacity: 0,
         y: -30,
-        duration: 0.3,
+        duration: 0.2,
         opacity: 0,
         ease: "elastic(1, 0.3)",
       })
       .to(".iee", {
         y: 40,
         opacity: 1,
-        duration: 0.3,
+        duration: 0.2,
         transformOrigin: "center",
         ease: "back(1.4)",
         fill: "#fff",
@@ -120,14 +125,14 @@ const Loader = () => {
       .from(".nee", {
         opacity: 0,
         y: -30,
-        duration: 0.3,
+        duration: 0.2,
         opacity: 0,
         ease: "elastic(1, 0.3)",
       })
       .to(".nee", {
         y: 40,
         opacity: 1,
-        duration: 0.3,
+        duration: 0.2,
         transformOrigin: "center",
         ease: "back(1.4)",
         fill: "#fff",
@@ -135,14 +140,14 @@ const Loader = () => {
       .from(".tee", {
         opacity: 0,
         y: -30,
-        duration: 0.3,
+        duration: 0.2,
         opacity: 0,
         ease: "elastic(1, 0.3)",
       })
       .to(".tee", {
         y: 40,
         opacity: 1,
-        duration: 0.3,
+        duration: 0.2,
         transformOrigin: "center",
         ease: "back(1.4)",
         fill: "#fff",
@@ -150,21 +155,21 @@ const Loader = () => {
       .from(".han", {
         opacity: 0,
         y: -30,
-        duration: 0.3,
+        duration: 0.2,
         opacity: 0,
         ease: "elastic(1, 0.3)",
       })
       .to(".han", {
         y: 40,
         opacity: 1,
-        duration: 0.3,
+        duration: 0.2,
         transformOrigin: "center",
         ease: "back(1.4)",
         fill: "#fff",
       })
       .from(".heen", {
         opacity: 0,
-        x: 550,
+        // x: -1550,
         y: -30,
         duration: 1,
         opacity: 0,
@@ -183,6 +188,9 @@ const Loader = () => {
         y: 40,
         opacity: 0,
         duration: 0.4,
+        stagger: {
+          amount: 30,
+        },
         // ease: "back(1.4)",
       })
       .to(".headers", {
@@ -213,6 +221,7 @@ const Loader = () => {
         viewBox="0 0 803 119"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className={styles.small}
       >
         <path
           d="M64.776 88.496H80.904V98H52.464V47.456H64.776V88.496Z"

@@ -41,7 +41,6 @@
 }
 
 .left_skill {
-  border: 1px solid #d1bfbf;
   padding: 10px;
   width: 45%;
   box-shadow: -3px 3px -1px #d1bfbf;
@@ -53,7 +52,6 @@
 }
 
 .right_skill {
-  border: 1px solid #d1bfbf;
   width: 45%;
   display: block;
   box-shadow: -3px 3px -1px #d1bfbf;
@@ -68,6 +66,10 @@
   line-height: 25px;
   padding: 5px;
   font-weight: 200;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  margin: 10px auto;
+  width: 50%;
+  border-radius: 5px;
 }
 .sec_two {
   width: 40%;

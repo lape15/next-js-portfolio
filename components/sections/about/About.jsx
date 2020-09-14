@@ -42,18 +42,38 @@ const About = (props) => {
       </div>
       <div className={styles.skill_list}>
         <ul className={styles.left_skill} data-aos="fade-up-right">
-          <ol className={styles.skill}>CSS3</ol>
-          <ol className={styles.skill}>SASS</ol>
-          <ol className={styles.skill}>REACT</ol>
-          <ol className={styles.skill}>HTML5</ol>
-          <ol className={styles.skill}>Next js</ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            CSS3
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            SASS
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            REACT
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            HTML5
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            Next js
+          </ol>
         </ul>
         <ul className={styles.right_skill} data-aos="fade-up-left">
-          <ol className={styles.skill}>GraphQL</ol>
-          <ol className={styles.skill}>Testing</ol>
-          <ol className={styles.skill}>Github</ol>
-          <ol className={styles.skill}>Redux</ol>
-          <ol className={styles.skill}>TailwindCss</ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            GraphQL
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            Testing
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            Github
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            Redux
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            TailwindCss
+          </ol>
         </ul>
         <div></div>
       </div>
