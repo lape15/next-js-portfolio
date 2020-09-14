@@ -3,6 +3,7 @@ import styles from "./layout.module.css";
 import Navbar from "./Navbar";
 import Menu from "./menu/Menu";
 import MenuContextProvider from "../context/MenuContext";
+import Socials from "./sections/socials/Socials";
 
 const name = "Lape";
 export const siteTitle = "Lape";
@@ -26,6 +27,12 @@ export default function Layout({ children, home }) {
           href="https://fonts.googleapis.com/css2?family=Raleway&family=Vidaloka&display=swap"
           rel="stylesheet"
         ></link>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous"
+        />
 
         <meta
           name="description"
@@ -43,6 +50,7 @@ export default function Layout({ children, home }) {
 
       <Navbar />
       <Menu />
+      <Socials />
       <main>{children}</main>
     </div>
   );

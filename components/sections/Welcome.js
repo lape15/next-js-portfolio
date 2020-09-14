@@ -3,14 +3,6 @@ import { useEffect, useState } from "react";
 import styles from "./welcome.module.css";
 
 const HomeIndex = (props) => {
-  const [loading, setLoading] = useState(false);
-  const handleLoading = () => {
-    setLoading(true);
-  };
-  useEffect(() => {
-    handleLoading();
-    // props.AOS.init();
-  });
   return (
     <section className={styles.part_one}>
       <div className={styles.side_one}>
@@ -38,6 +30,7 @@ const HomeIndex = (props) => {
           alt="lady"
           className={styles.img}
           data-aos="zoom-out-up"
+          data-aos-delay="150"
         />
       </div>
     </section>
