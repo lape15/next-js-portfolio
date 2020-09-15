@@ -25,10 +25,11 @@
   height: 42px;
   padding: 18px 10px;
   position: fixed;
-  transform: translate(1050px, -55px);
+  transform: translate(1150px, -55px);
   cursor: pointer;
-  position: fixed;
+
   border-radius: 8px;
+  float: right;
   z-index: 6;
   box-shadow: -3px -3px -1px #d1bfbf;
   background: #191919;
@@ -203,9 +204,23 @@
 
 @media only screen and (max-width: 769px) {
   .menu_btn {
-    transform: translate(300px, -55px);
+    transform: translate(620px, -55px);
+    position: fixed;
+    background-color: coral;
   }
   .menu_box {
     width: 63.3%;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .menu_btn {
+    transform: translate(270px, -55px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .menu_btn {
+    transform: translate(900px, -55px);
   }
 }

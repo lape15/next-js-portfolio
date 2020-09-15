@@ -1,6 +1,6 @@
 .part_one {
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   padding: 15px 85px;
   font-family: "Luckiest Guy", cursive;
   display: flex;
@@ -38,6 +38,7 @@
   position: absolute;
   right: 25px;
   top: -25px;
+  object-fit: cover;
   /* animation: moving-image 1.2s ease-in infinite; */
 }
 
@@ -315,7 +316,25 @@
 .btn:hover:after {
   transform: rotateY(90deg);
 }
+
 @media only screen and (max-width: 769px) {
+  .part_one {
+    padding: 20px 10px;
+    display: block;
+    height: 1100px;
+    border: 2px solid red;
+    width: 100%;
+  }
+  .side_one {
+    width: 100%;
+  }
+  .side_two {
+    margin: 30px auto;
+    width: 85%;
+    height: 420px;
+  }
+}
+@media only screen and (max-width: 512px) {
   .part_one {
     padding: 10px 30px;
     display: block;
@@ -336,12 +355,14 @@
     width: 100%;
   }
   .side_two {
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
   }
   .img {
     right: 10px;
     top: -10px;
     animation: none;
+    object-fit: cover;
   }
 }

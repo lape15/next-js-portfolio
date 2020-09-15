@@ -21,11 +21,11 @@ const About = (props) => {
           className={`${styles.head} ${
             loading ? styles.clear : styles.un_clear
           }`}
-          data-aos="slide-up"
+          data-aos="zoom-in-up"
         >
           About Me
         </h2>
-        <div data-aos="slide-up">
+        <div data-aos="zoom-in-up">
           <span
             className={`${styles.text} ${
               loading ? styles.clear : styles.un_clear
@@ -36,11 +36,14 @@ const About = (props) => {
             journey, I have moved over the years from being a novice to a pretty
             decent front-end developer. I am profficient in front-end languages
             and their various frameworks I build like to build beatufiful user
-            interfaces.With profficiency in :
+            interfaces.
           </span>
         </div>
       </div>
       <div className={styles.skill_list}>
+        <h3 className={styles.skill_title} data-aos="zoom-in-up">
+          Skills
+        </h3>
         <ul className={styles.left_skill} data-aos="fade-up-right">
           <ol className={styles.skill} data-aos="flip-up">
             CSS3

@@ -15,7 +15,6 @@ const Menu = () => {
     if (window.scrollY >= 1100) {
       // alert(window.scrollY);
       setChangeMenu(true);
-      console.log(changeMenu);
     } else if (window.scrollY < 1200) {
       setChangeMenu(false);
     }

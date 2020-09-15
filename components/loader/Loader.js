@@ -23,7 +23,7 @@ const Loader = () => {
         opacity: 1,
         fill: "#fff",
         stroke: "#B89D87",
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
         attr: {
           "stroke-dashoffset": 0,
         },
@@ -35,14 +35,14 @@ const Loader = () => {
         y: -30,
         duration: 0.2,
         opacity: 0,
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
       })
       .to(".name", {
         opacity: 1,
         y: 40,
         duration: 0.2,
         opacity: 2,
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
         fill: "#fff",
         transformOrigin: "center",
       })
@@ -51,14 +51,14 @@ const Loader = () => {
         y: -30,
         duration: 0.2,
         opacity: 0,
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
       })
       .to(".pee", {
         y: 40,
         opacity: 1,
         duration: 0.2,
         transformOrigin: "center",
-        ease: "back(1.4)",
+        ease: "power4.inOut",
         fill: "#fff",
       })
       .from(".ee", {
@@ -67,14 +67,14 @@ const Loader = () => {
         y: -30,
         duration: 0.2,
         opacity: 0,
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
       })
       .to(".ee", {
         y: 40,
         opacity: 1,
         duration: 0.2,
         transformOrigin: "center",
-        ease: "back(1.4)",
+        ease: "power4.inOut",
         fill: "#fff",
       })
       .from(".hee", {
@@ -82,14 +82,14 @@ const Loader = () => {
         y: -30,
         duration: 0.2,
         opacity: 0,
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
       })
       .to(".hee", {
         y: 40,
         opacity: 1,
         duration: 0.2,
         transformOrigin: "center",
-        ease: "back(1.4)",
+        ease: "power4.inOut",
         fill: "#fff",
       })
       .from(".kee", {
@@ -97,14 +97,14 @@ const Loader = () => {
         y: -30,
         duration: 0.2,
         opacity: 0,
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
       })
       .to(".kee", {
         y: 40,
         opacity: 1,
         duration: 0.2,
         transformOrigin: "center",
-        ease: "back(1.4)",
+        ease: "power4.inOut",
         fill: "#fff",
       })
       .from(".iee", {
@@ -112,14 +112,14 @@ const Loader = () => {
         y: -30,
         duration: 0.2,
         opacity: 0,
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
       })
       .to(".iee", {
         y: 40,
         opacity: 1,
         duration: 0.2,
         transformOrigin: "center",
-        ease: "back(1.4)",
+        ease: "power4.inOut",
         fill: "#fff",
       })
       .from(".nee", {
@@ -127,14 +127,14 @@ const Loader = () => {
         y: -30,
         duration: 0.2,
         opacity: 0,
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
       })
       .to(".nee", {
         y: 40,
         opacity: 1,
         duration: 0.2,
         transformOrigin: "center",
-        ease: "back(1.4)",
+        ease: "power4.inOut",
         fill: "#fff",
       })
       .from(".tee", {
@@ -142,14 +142,14 @@ const Loader = () => {
         y: -30,
         duration: 0.2,
         opacity: 0,
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
       })
       .to(".tee", {
         y: 40,
         opacity: 1,
         duration: 0.2,
         transformOrigin: "center",
-        ease: "back(1.4)",
+        ease: "power4.inOut",
         fill: "#fff",
       })
       .from(".han", {
@@ -157,14 +157,14 @@ const Loader = () => {
         y: -30,
         duration: 0.2,
         opacity: 0,
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
       })
       .to(".han", {
         y: 40,
         opacity: 1,
         duration: 0.2,
         transformOrigin: "center",
-        ease: "back(1.4)",
+        ease: "power4.inOut",
         fill: "#fff",
       })
       .from(".heen", {
@@ -173,15 +173,14 @@ const Loader = () => {
         y: -30,
         duration: 1,
         opacity: 0,
-
-        ease: "elastic(1, 0.3)",
+        ease: "power4.inOut",
       })
       .to(".heen", {
         y: 40,
         opacity: 1,
         duration: 0.8,
         transformOrigin: "center",
-        ease: "back(1.4)",
+        ease: "power4.inOut",
         fill: "#fff",
       })
       .from(".headers", {

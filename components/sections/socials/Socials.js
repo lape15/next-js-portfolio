@@ -8,7 +8,8 @@ const Socials = () => {
   };
 
   useEffect(() => {
-    setTimeout(changeLoad, 2500);
+    const interval = setTimeout(changeLoad, 2500);
+    return () => clearTimeout(interval);
   }, []);
   return (
     <div className={`${styles.socials} ${load ? styles.in : styles.away}`}>
