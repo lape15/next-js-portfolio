@@ -12,8 +12,8 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div>
-            <p>A budgeting app</p>
+          <div className={styles.details}>
+            <p className={styles.deets}>A budgeting app</p>
           </div>
         </div>
 
@@ -25,8 +25,8 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div>
-            <p>A CGPA calculator</p>
+          <div className={styles.details}>
+            <p className={styles.deets}>A CGPA calculator</p>
           </div>
         </div>
         <div className={styles.project_item}>
@@ -37,8 +37,8 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div>
-            <p>An Ecommerce app </p>
+          <div className={styles.details}>
+            <p className={styles.deets}>An Ecommerce app </p>
           </div>
         </div>
 
@@ -50,8 +50,21 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div>
-            <p>A tax consulting app </p>
+          <div className={styles.details}>
+            <p className={styles.deets}>A tax consulting app </p>
+          </div>
+        </div>
+
+        <div className={styles.project_item}>
+          <div className={styles.project_con}>
+            <img
+              src="/images/projects/memory-game.png"
+              alt="memory"
+              className={styles.project_img}
+            />
+          </div>
+          <div className={styles.details}>
+            <p className={styles.deets}>A card memory game </p>
           </div>
         </div>
         <div className={styles.project_item}>
@@ -62,20 +75,8 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div>
-            <p>A corona virus tracker </p>
-          </div>
-        </div>
-        <div className={styles.project_item}>
-          <div className={styles.project_con}>
-            <img
-              src="/images/projects/memory-game.png"
-              alt="memory"
-              className={styles.project_img}
-            />
-          </div>
-          <div>
-            <p>A card memory game </p>
+          <div className={styles.details}>
+            <p className={styles.deets}>A corona virus tracker </p>
           </div>
         </div>
       </div>
