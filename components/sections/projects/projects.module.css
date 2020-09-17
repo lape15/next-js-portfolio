@@ -181,11 +181,11 @@
   }
   .project_item::after {
     width: 62%;
-    transform: translate(15px, -10px);
+    transform: translate(18px, -10px);
     height: 85%;
   }
   .project_item:nth-child(even).project_item::after {
-    transform: translate(-15px, -10px);
+    transform: translate(-18px, -10px);
   }
   .project_item:hover.project_item::after {
     transform: translate(130px, -10px);
