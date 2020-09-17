@@ -180,19 +180,19 @@
     width: 40%;
   }
   .project_item::after {
-    width: 60%;
-    transform: translate(20px, -10px);
-    height: 80%;
+    width: 62%;
+    transform: translate(15px, -10px);
+    height: 85%;
   }
   .project_item:nth-child(even).project_item::after {
-    transform: translate(-20px, -10px);
+    transform: translate(-15px, -10px);
   }
   .project_item:hover.project_item::after {
-    transform: translate(150px, -30px);
+    transform: translate(130px, -10px);
   }
   .project_item:hover.project_item:nth-child(even).project_item::after {
     border-radius: 100%;
-    transform: translate(-150px, -30px);
+    transform: translate(-130px, -10px);
   }
   .title {
     font-size: 1.1rem;
