@@ -68,4 +68,7 @@
   .socials {
     width: 24%;
   }
+  .in {
+    transform: translate(-2px, 20px);
+  }
 }
