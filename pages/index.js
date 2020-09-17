@@ -6,6 +6,7 @@ import styles from "./index.module.css";
 const HomeIndex = dynamic(() => import("../components/sections/Welcome"), {
   loading: () => <h1>Loading...</h1>,
 });
+// import HomeIndex from "../components/sections/Welcome";
 import About from "../components/sections/about/About";
 import AOS from "aos";
 import Projects from "../components/sections/projects/Projects";
