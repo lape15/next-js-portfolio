@@ -35,7 +35,7 @@ const Home = () => {
       <HomeIndex AOS={AOS} />
       <About AOS={AOS} />
 
-      <Projects />
+      <Projects AOS={AOS} />
     </Layout>
   );
 };

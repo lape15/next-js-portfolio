@@ -50,7 +50,7 @@ const Menu = () => {
               About{" "}
             </a>
           </Link>
-          <Link href="/">
+          <Link href="#projects">
             <a
               className={`${styles.menu_item} ${
                 showMenu ? styles.projects : styles.item_two
@@ -60,7 +60,7 @@ const Menu = () => {
               Projects
             </a>
           </Link>
-          <Link href="/">
+          <Link href="#about">
             <a
               className={`${styles.menu_item} ${
                 showMenu ? styles.skills : styles.item_three

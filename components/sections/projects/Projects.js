@@ -2,8 +2,8 @@ import styles from "./projects.module.css";
 
 const Projects = () => {
   return (
-    <div className={styles.con_projecs}>
-      <h3>Some of my Projects</h3>
+    <div className={styles.con_projecs} id="projects">
+      <h3 className={styles.heading}>Few past projects</h3>
       <div className={styles.projects_holder}>
         <div className={styles.project_item}>
           <div className={styles.project_con}>
@@ -16,23 +16,23 @@ const Projects = () => {
           <div className={styles.details}>
             <h3 className={styles.title}>BudgetIt</h3>
             <p className={styles.deets}>A budgeting app</p>
-            <button>
+            <button className={styles.project_btn}>
               {" "}
               <a
-                href="https://www.twitter.com/lappiey"
-                className={styles.link}
-                title="Twitter"
+                href="https://github.com/lape15/budget-app"
+                className={styles.white}
+                title="Git"
                 target="_blank"
               >
                 Github
               </a>
             </button>
-            <button>
+            <button className={styles.project_btn}>
               {" "}
               <a
-                href="https://www.twitter.com/lappiey"
-                className={styles.link}
-                title="Twitter"
+                href="https://budgetit.netlify.app/"
+                className={styles.white}
+                title="Live"
                 target="_blank"
               >
                 Live
@@ -52,23 +52,23 @@ const Projects = () => {
           <div className={styles.details}>
             <h3 className={styles.title}>Grader</h3>
             <p className={styles.deets}>A CGPA calculator</p>
-            <button>
+            <button className={styles.project_btn}>
               {" "}
               <a
-                href="https://www.twitter.com/lappiey"
-                className={styles.link}
-                title="Twitter"
+                href="https://github.com/lape15/gpa-calculator"
+                className={styles.white}
+                title="Github"
                 target="_blank"
               >
                 Github
               </a>
             </button>
-            <button>
+            <button className={styles.project_btn}>
               {" "}
               <a
-                href="https://www.twitter.com/lappiey"
-                className={styles.link}
-                title="Twitter"
+                href="https://gpae-calc.netlify.app/"
+                className={styles.white}
+                title="Live"
                 target="_blank"
               >
                 Live
@@ -85,25 +85,28 @@ const Projects = () => {
             />
           </div>
           <div className={styles.details}>
-            <h3 className={styles.title}>Crow-clothings</h3>
-            <p className={styles.deets}>A CGPA calculator</p>
-            <button>
+            <h3 className={styles.title}>Crown-clothings</h3>
+            <p className={styles.deets}>An e-commerce application</p>
+            <button
+              className={styles.project_btn}
+              className={styles.project_btn}
+            >
               {" "}
               <a
-                href="https://www.twitter.com/lappiey"
-                className={styles.link}
-                title="Twitter"
+                href="https://github.com/lape15/shop-redux"
+                className={styles.white}
+                title="Github"
                 target="_blank"
               >
                 Github
               </a>
             </button>
-            <button>
+            <button className={styles.project_btn}>
               {" "}
               <a
-                href="https://www.twitter.com/lappiey"
-                className={styles.link}
-                title="Twitter"
+                href="https://shopp-app.netlify.app/"
+                className={styles.white}
+                title="Live"
                 target="_blank"
               >
                 Live
@@ -122,24 +125,14 @@ const Projects = () => {
             />
           </div>
           <div className={styles.details}>
-            <h3 className={styles.title}>Grader</h3>
-            <p className={styles.deets}>A CGPA calculator</p>
-            <button>
+            <h3 className={styles.title}>Taxmingo</h3>
+            <p className={styles.deets}>A tax-computation app</p>
+
+            <button className={styles.project_btn}>
               {" "}
               <a
                 href="https://www.twitter.com/lappiey"
-                className={styles.link}
-                title="Twitter"
-                target="_blank"
-              >
-                Taxmingo
-              </a>
-            </button>
-            <button>
-              {" "}
-              <a
-                href="https://www.twitter.com/lappiey"
-                className={styles.link}
+                className={styles.white}
                 title="Twitter"
                 target="_blank"
               >
@@ -160,30 +153,29 @@ const Projects = () => {
           </div>
           <div className={styles.details}>
             <h3 className={styles.title}>Memory-game</h3>
-
-            <button>
+            <p className={styles.deets}>A card memory game </p>
+            <button className={styles.project_btn}>
               {" "}
               <a
-                href="https://www.twitter.com/lappiey"
-                className={styles.link}
-                title="Twitter"
+                href="https://github.com/lape15/card-memory-game"
+                className={styles.white}
+                title="Github"
                 target="_blank"
               >
                 Github
               </a>
             </button>
-            <button>
+            <button className={styles.project_btn}>
               {" "}
               <a
-                href="https://www.twitter.com/lappiey"
-                className={styles.link}
-                title="Twitter"
+                href="https://card-memory-gamme.netlify.app/"
+                className={styles.white}
+                title="Live"
                 target="_blank"
               >
                 Live
               </a>
             </button>
-            <p className={styles.deets}>A card memory game </p>
           </div>
         </div>
         <div className={styles.project_item}>
@@ -195,7 +187,31 @@ const Projects = () => {
             />
           </div>
           <div className={styles.details}>
+            <h3 className={styles.title}>Covida</h3>
             <p className={styles.deets}>A corona virus tracker </p>
+
+            <button className={styles.project_btn}>
+              {" "}
+              <a
+                href="https://github.com/lape15/SCAMP-Assesment"
+                className={styles.white}
+                title="Github"
+                target="_blank"
+              >
+                Github
+              </a>
+            </button>
+            <button className={styles.project_btn}>
+              {" "}
+              <a
+                href="https://covids19-updates.netlify.app/"
+                className={styles.white}
+                title="Live"
+                target="_blank"
+              >
+                Live
+              </a>
+            </button>
           </div>
         </div>
       </div>
