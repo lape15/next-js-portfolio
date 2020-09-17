@@ -131,7 +131,7 @@ const Projects = () => {
             <button className={styles.project_btn}>
               {" "}
               <a
-                href="https://www.twitter.com/lappiey"
+                href="https://taxmingo.com/"
                 className={styles.white}
                 title="Twitter"
                 target="_blank"
