@@ -9,7 +9,7 @@ const Loader = () => {
       duration: 1,
       x: -170,
       opacity: 0,
-      ease: "elastic(1, 0.3)",
+      ease: "power4.inOut",
       yoyo: true,
       autoAlpha: 1,
       attr: {
@@ -171,7 +171,7 @@ const Loader = () => {
         opacity: 0,
         // x: -1550,
         y: -30,
-        duration: 1,
+        duration: 0.2,
         opacity: 0,
         ease: "power4.inOut",
       })
