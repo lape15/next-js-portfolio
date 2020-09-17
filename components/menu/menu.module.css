@@ -218,6 +218,6 @@
 
 @media only screen and (max-width: 512px) {
   .menu_btn {
-    transform: translate(350px, -55px);
+    transform: translate(310px, -55px);
   }
 }
