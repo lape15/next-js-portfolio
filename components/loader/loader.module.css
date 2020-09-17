@@ -75,10 +75,11 @@
   }
   .small {
     width: 250px;
-
+    height: 200px;
     margin: 20px auto;
   }
   .role {
     font-size: 1.2rem;
+    margin: 5px;
   }
 }
