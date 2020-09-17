@@ -13,7 +13,7 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div className={styles.details}>
+          <div className={styles.details} data-aos="zoom-in-up">
             <h3 className={styles.title}>BudgetIt</h3>
             <p className={styles.deets}>A budgeting app</p>
             <button className={styles.project_btn}>
@@ -49,7 +49,7 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div className={styles.details}>
+          <div className={styles.details} data-aos="slide-up">
             <h3 className={styles.title}>Grader</h3>
             <p className={styles.deets}>A CGPA calculator</p>
             <button className={styles.project_btn}>
@@ -84,7 +84,7 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div className={styles.details}>
+          <div className={styles.details} data-aos="fade-up">
             <h3 className={styles.title}>Crown-clothings</h3>
             <p className={styles.deets}>An e-commerce application</p>
             <button
@@ -124,7 +124,7 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div className={styles.details}>
+          <div className={styles.details} data-aos="zoom-in-up">
             <h3 className={styles.title}>Taxmingo</h3>
             <p className={styles.deets}>A tax-computation app</p>
 
@@ -151,7 +151,7 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div className={styles.details}>
+          <div className={styles.details} data-aos="slide-up">
             <h3 className={styles.title}>Memory-game</h3>
             <p className={styles.deets}>A card memory game </p>
             <button className={styles.project_btn}>
@@ -186,7 +186,7 @@ const Projects = () => {
               className={styles.project_img}
             />
           </div>
-          <div className={styles.details}>
+          <div className={styles.details} data-aos="fade-up">
             <h3 className={styles.title}>Covida</h3>
             <p className={styles.deets}>A corona virus tracker </p>
 

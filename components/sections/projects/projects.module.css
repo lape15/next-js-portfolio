@@ -55,7 +55,7 @@
 }
 .project_item:hover.project_item:nth-child(even).project_item::after {
   border-radius: 120%;
-  transform: translate(-680px, 30px);
+  transform: translate(-680px, -30px);
   background: rgba(143, 145, 140, 0.3);
 }
 .project_con {
