@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 import Menu from "./menu/Menu";
 import MenuContextProvider from "../context/MenuContext";
 import Socials from "./sections/socials/Socials";
-import Footer from "./sections/footer/Footer";
 
 const name = "Lape";
 export const siteTitle = "Lape";

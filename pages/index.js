@@ -11,7 +11,7 @@ import About from "../components/sections/about/About";
 import AOS from "aos";
 import Projects from "../components/sections/projects/Projects";
 import Loader from "../components/loader/Loader";
-import Footer from "../components/sections/footer/Footer";
+import Footer from "../components/sections/footer/footer";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
