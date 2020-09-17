@@ -1,8 +1,5 @@
 .container {
   min-height: 100vh;
-  padding: 15px 0px;
-  position: relative;
-  overflow-x: hidden;
 }
 
 /* .header {

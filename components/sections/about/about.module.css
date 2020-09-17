@@ -1,5 +1,5 @@
 .about_section {
-  height: 800px;
+  height: 850px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -8,7 +8,8 @@
   background: #fff;
   position: relative;
   overflow: hidden;
-  /* border: 2px solid green; */
+  margin: 0 10px 5px 0;
+  padding-bottom: 5px;
 }
 /* .about_section:before {
   content: "";

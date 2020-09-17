@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Menu from "./menu/Menu";
 import MenuContextProvider from "../context/MenuContext";
 import Socials from "./sections/socials/Socials";
+import Footer from "./sections/footer/Footer";
 
 const name = "Lape";
 export const siteTitle = "Lape";
@@ -51,7 +52,7 @@ export default function Layout({ children, home }) {
       <Navbar />
       <Menu />
       <Socials />
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
     </div>
   );
 }

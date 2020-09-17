@@ -1,0 +1,7 @@
+.mains {
+  z-index: 2;
+  padding: 5px 0px;
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom: 120px;
+}

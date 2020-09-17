@@ -1,5 +1,3 @@
-import { useTrail, animated } from "react-spring";
-import { useEffect, useState } from "react";
 import styles from "./welcome.module.css";
 
 const HomeIndex = (props) => {
@@ -20,7 +18,12 @@ const HomeIndex = (props) => {
         <div className={styles.text} data-aos="slide-up">
           <p data-aos="zoom-out-up">I am very passionate about technology.</p>
           <p data-aos="zoom-out-up">Feel free to say hi &#128075;</p>
-          <button className={styles.btn}>Hi &#128075;</button>
+          <button className={styles.btn}>
+            <a href="mailto:lape.akintan@gmail.com" className={styles.link}>
+              {" "}
+              Hi &#128075;
+            </a>
+          </button>
         </div>
       </div>
 
