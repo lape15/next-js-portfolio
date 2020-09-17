@@ -8,7 +8,7 @@ const Projects = () => {
         <div className={styles.project_item}>
           <div className={styles.project_con}>
             <img
-              src="/images/projects/budegetit.png"
+              src="/images/projects/budget.png"
               alt="budget-app"
               className={styles.project_img}
             />
