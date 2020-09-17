@@ -19,7 +19,7 @@ const Home = () => {
     AOS.init({
       duration: 1500,
     });
-    const interval = setTimeout(handleLoading, 42000);
+    const interval = setTimeout(handleLoading, 12000);
     return () => {
       clearInterval(interval);
     };
