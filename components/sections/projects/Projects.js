@@ -214,6 +214,42 @@ const Projects = () => {
             </button>
           </div>
         </div>
+        <div className={styles.project_item}>
+          <div className={styles.project_con}>
+            <img
+              src="/images/projects/intro.png"
+              alt="covid-app"
+              className={styles.project_img}
+            />
+          </div>
+          <div className={styles.details} data-aos="slide-up">
+            <h3 className={styles.title}>Covida</h3>
+            <p className={styles.deets}>A corona virus tracker </p>
+
+            <button className={styles.project_btn}>
+              {" "}
+              <a
+                href="https://github.com/lape15/css-image-slider"
+                className={styles.white}
+                title="Github"
+                target="_blank"
+              >
+                Github
+              </a>
+            </button>
+            <button className={styles.project_btn}>
+              {" "}
+              <a
+                href="https://elegant-feynman-45349a.netlify.app/"
+                className={styles.white}
+                title="Live"
+                target="_blank"
+              >
+                Live
+              </a>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
