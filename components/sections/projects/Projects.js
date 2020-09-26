@@ -224,7 +224,7 @@ const Projects = () => {
           </div>
           <div className={styles.details} data-aos="slide-up">
             <h3 className={styles.title}>Covida</h3>
-            <p className={styles.deets}>A corona virus tracker </p>
+            <p className={styles.deets}>A website</p>
 
             <button className={styles.project_btn}>
               {" "}
