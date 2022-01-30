@@ -13,7 +13,7 @@ const About = (props) => {
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
-  });
+  },[]);
   return (
     <section className={styles.about_section} id="about">
       <div className={styles.sec_one}>

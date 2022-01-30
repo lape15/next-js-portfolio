@@ -1,1 +1,1 @@
-portfolio built with next and react
+portfolio built with next js

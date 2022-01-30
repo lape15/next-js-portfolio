@@ -26,7 +26,8 @@ const Home = () => {
     return () => {
       clearInterval(interval);
     };
-  });
+  },[]);
+  
   if (loading) {
     return <Loader loading={loading} />;
   }

@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import styles from "./welcome.module.css";
+import laps from '../../public/images/laps.JPG'
 
 const HomeIndex = (props) => {
   return (
@@ -28,8 +30,8 @@ const HomeIndex = (props) => {
       </div>
 
       <div className={styles.side_two}>
-        <img
-          src="/images/laps.JPG"
+        <Image
+          src={laps}
           alt="lady"
           className={styles.img}
           data-aos="zoom-out-up"

@@ -5,8 +5,7 @@ import MenuContextProvider from "../context/MenuContext";
 export default function App({ Component, pageProps }) {
   return (
     <MenuContextProvider>
-      {" "}
-      <Component {...pageProps} />{" "}
+      <Component {...pageProps} />
     </MenuContextProvider>
   );
 }

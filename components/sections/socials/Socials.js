@@ -21,7 +21,7 @@ const Socials = () => {
             title="Twitter"
             target="_blank"
           >
-            <i class="fab fa-twitter"></i>
+            <i className="fab fa-twitter"></i>
           </a>
         </div>
         <div className={styles.panel}>
@@ -31,7 +31,7 @@ const Socials = () => {
             title="Linkedin"
             target="_blank"
           >
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-linkedin-in"></i>
           </a>
         </div>
         <div className={styles.panel}>
@@ -41,12 +41,12 @@ const Socials = () => {
             title="Github"
             target="_blank"
           >
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </a>
         </div>
         <div className={styles.panel}>
           <a href="mailto:lape.akintan@gmail.com" className={styles.link}>
-            <i class="fas fa-envelope-open"></i>
+            <i className="fas fa-envelope-open"></i>
           </a>
         </div>
       </div>
