@@ -31,12 +31,8 @@ const About = (props) => {
               loading ? styles.clear : styles.un_clear
             }`}
           >
-            I am a front-end developer and for more a year now, software has
-            been the central piece of my world. On this fast and mind-blowing
-            journey, I have moved over the years from being a novice to a pretty
-            decent front-end developer. I am profficient in front-end languages
-            and their various frameworks I build like to build beatufiful user
-            interfaces.
+            I am a detail-perfect frontend developer driven by the desire to create functional and easy-to-use general solutions to specific problems using tech (and whatever else is necessary). With over 3 years of experience, I have worked on multiple challenging projects as a frontend developer. I am always eager to learn and understand different opinions and methods of reasoning, and I love exploring new technologies while delivering excellent products on the job.
+
           </span>
         </div>
       </div>
