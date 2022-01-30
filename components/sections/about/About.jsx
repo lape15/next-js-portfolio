@@ -45,6 +45,12 @@ const About = (props) => {
             CSS3
           </ol>
           <ol className={styles.skill} data-aos="flip-up">
+           JavaScript
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+           Typescript
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
             SASS
           </ol>
           <ol className={styles.skill} data-aos="flip-up">
@@ -56,6 +62,9 @@ const About = (props) => {
           <ol className={styles.skill} data-aos="flip-up">
             Next js
           </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+           Angular 1
+          </ol>
         </ul>
         <ul className={styles.right_skill} data-aos="fade-up-left">
           <ol className={styles.skill} data-aos="flip-up">
@@ -63,6 +72,15 @@ const About = (props) => {
           </ol>
           <ol className={styles.skill} data-aos="flip-up">
             Testing
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            Redux toolkit
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+          Node js
+          </ol>
+          <ol className={styles.skill} data-aos="flip-up">
+            Express
           </ol>
           <ol className={styles.skill} data-aos="flip-up">
             Github
